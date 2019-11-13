@@ -14,7 +14,7 @@ build:
 
 # zip BootFS and generate zircon.bin
 zbi:
-	${ZBI} --compressed=lz4f prebuilt/legacy-image-x64.zbi --replace bootfs -o esp/zircon.bin
+	${ZBI} --compressed=lz4 prebuilt/legacy-image-x64.zbi --replace bootfs -o esp/zircon.bin
 
 # run Zircon on QEMU
 run: zbi
